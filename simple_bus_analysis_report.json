@@ -1,0 +1,1284 @@
+{
+  "analysis_timestamp": "2025-09-21T15:04:19.417590",
+  "dataset_size": 30000,
+  "temporal_patterns": {
+    "hourly": {
+      "peak_hour": 14,
+      "peak_violations": 2209,
+      "avg_impact_by_hour": {
+        "0": 3.02,
+        "1": 3.07,
+        "2": 3.11,
+        "3": 3.15,
+        "4": 3.08,
+        "5": 2.96,
+        "6": 2.9,
+        "7": 4.35,
+        "8": 4.35,
+        "9": 4.3,
+        "10": 2.93,
+        "11": 2.86,
+        "12": 2.84,
+        "13": 2.85,
+        "14": 2.86,
+        "15": 2.86,
+        "16": 2.83,
+        "17": 4.29,
+        "18": 4.3,
+        "19": 4.3,
+        "20": 2.86,
+        "21": 2.92,
+        "22": 2.94,
+        "23": 3.01
+      }
+    },
+    "daily": {
+      "violations_by_day": {
+        "Monday": "4762",
+        "Tuesday": "4604",
+        "Wednesday": "4964",
+        "Thursday": "5310",
+        "Friday": "5021",
+        "Saturday": "2950",
+        "Sunday": "2389"
+      },
+      "impact_by_day": {
+        "Monday": 3.4,
+        "Tuesday": 3.38,
+        "Wednesday": 3.4,
+        "Thursday": 3.43,
+        "Friday": 3.42,
+        "Saturday": 3.37,
+        "Sunday": 3.39
+      }
+    },
+    "rush_hour_impact": {
+      "rush_hour_violations": 10895,
+      "non_rush_violations": 19105,
+      "rush_hour_avg_impact": 4.32,
+      "rush_hour_avg_speed": 6.65
+    }
+  },
+  "route_performance": {
+    "all_routes": [
+      {
+        "bus_route_id": "B25",
+        "violation_count": 379,
+        "avg_impact": 3.13,
+        "impact_variability": 0.72,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.4
+      },
+      {
+        "bus_route_id": "B26",
+        "violation_count": 89,
+        "avg_impact": 3.18,
+        "impact_variability": 0.76,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.33
+      },
+      {
+        "bus_route_id": "B35",
+        "violation_count": 702,
+        "avg_impact": 3.07,
+        "impact_variability": 0.89,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.37
+      },
+      {
+        "bus_route_id": "B41",
+        "violation_count": 635,
+        "avg_impact": 2.92,
+        "impact_variability": 0.82,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.31
+      },
+      {
+        "bus_route_id": "B42",
+        "violation_count": 103,
+        "avg_impact": 3.38,
+        "impact_variability": 0.67,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.56
+      },
+      {
+        "bus_route_id": "B44+",
+        "violation_count": 1096,
+        "avg_impact": 3.23,
+        "impact_variability": 0.76,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.4
+      },
+      {
+        "bus_route_id": "B46+",
+        "violation_count": 759,
+        "avg_impact": 3.06,
+        "impact_variability": 0.73,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.37
+      },
+      {
+        "bus_route_id": "B62",
+        "violation_count": 229,
+        "avg_impact": 3.46,
+        "impact_variability": 0.77,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.34
+      },
+      {
+        "bus_route_id": "B82+",
+        "violation_count": 747,
+        "avg_impact": 3.18,
+        "impact_variability": 0.82,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.45
+      },
+      {
+        "bus_route_id": "BX12+",
+        "violation_count": 887,
+        "avg_impact": 3.08,
+        "impact_variability": 0.74,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.43
+      },
+      {
+        "bus_route_id": "BX19",
+        "violation_count": 1737,
+        "avg_impact": 2.79,
+        "impact_variability": 0.76,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.33
+      },
+      {
+        "bus_route_id": "BX28",
+        "violation_count": 631,
+        "avg_impact": 3.13,
+        "impact_variability": 0.85,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.37
+      },
+      {
+        "bus_route_id": "BX28-BX38",
+        "violation_count": 61,
+        "avg_impact": 2.97,
+        "impact_variability": 0.61,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.38
+      },
+      {
+        "bus_route_id": "BX35",
+        "violation_count": 504,
+        "avg_impact": 2.7,
+        "impact_variability": 0.7,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.32
+      },
+      {
+        "bus_route_id": "BX36",
+        "violation_count": 1192,
+        "avg_impact": 2.79,
+        "impact_variability": 0.79,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.34
+      },
+      {
+        "bus_route_id": "BX38",
+        "violation_count": 161,
+        "avg_impact": 3.01,
+        "impact_variability": 0.86,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.42
+      },
+      {
+        "bus_route_id": "BX41+",
+        "violation_count": 1841,
+        "avg_impact": 2.88,
+        "impact_variability": 0.73,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.37
+      },
+      {
+        "bus_route_id": "BX5",
+        "violation_count": 74,
+        "avg_impact": 3.19,
+        "impact_variability": 0.72,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.43
+      },
+      {
+        "bus_route_id": "BX6+",
+        "violation_count": 888,
+        "avg_impact": 2.88,
+        "impact_variability": 0.84,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.35
+      },
+      {
+        "bus_route_id": "M100",
+        "violation_count": 1238,
+        "avg_impact": 3.44,
+        "impact_variability": 1.01,
+        "avg_speed": 6.27,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.35
+      },
+      {
+        "bus_route_id": "M101",
+        "violation_count": 4999,
+        "avg_impact": 3.78,
+        "impact_variability": 1.01,
+        "avg_speed": 6.53,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.32
+      },
+      {
+        "bus_route_id": "M14+",
+        "violation_count": 434,
+        "avg_impact": 3.12,
+        "impact_variability": 0.71,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.34
+      },
+      {
+        "bus_route_id": "M15+",
+        "violation_count": 2753,
+        "avg_impact": 4.1,
+        "impact_variability": 0.96,
+        "avg_speed": 8.25,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.39
+      },
+      {
+        "bus_route_id": "M2",
+        "violation_count": 1395,
+        "avg_impact": 4.27,
+        "impact_variability": 0.98,
+        "avg_speed": 6.95,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.34
+      },
+      {
+        "bus_route_id": "M23+",
+        "violation_count": 237,
+        "avg_impact": 3.84,
+        "impact_variability": 1.04,
+        "avg_speed": 5.82,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.29
+      },
+      {
+        "bus_route_id": "M34+",
+        "violation_count": 292,
+        "avg_impact": 4.23,
+        "impact_variability": 0.94,
+        "avg_speed": 5.57,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.36
+      },
+      {
+        "bus_route_id": "M4",
+        "violation_count": 515,
+        "avg_impact": 3.96,
+        "impact_variability": 1.14,
+        "avg_speed": 6.07,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.36
+      },
+      {
+        "bus_route_id": "M42",
+        "violation_count": 1114,
+        "avg_impact": 4.03,
+        "impact_variability": 0.87,
+        "avg_speed": 5.16,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.41
+      },
+      {
+        "bus_route_id": "M60+",
+        "violation_count": 380,
+        "avg_impact": 3.47,
+        "impact_variability": 0.94,
+        "avg_speed": 10.9,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.28
+      },
+      {
+        "bus_route_id": "M79+",
+        "violation_count": 394,
+        "avg_impact": 2.86,
+        "impact_variability": 0.8,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.39
+      },
+      {
+        "bus_route_id": "M86+",
+        "violation_count": 283,
+        "avg_impact": 2.65,
+        "impact_variability": 0.7,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.38
+      },
+      {
+        "bus_route_id": "Q43",
+        "violation_count": 288,
+        "avg_impact": 3.13,
+        "impact_variability": 0.78,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.56
+      },
+      {
+        "bus_route_id": "Q44+",
+        "violation_count": 1263,
+        "avg_impact": 3.26,
+        "impact_variability": 0.79,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.38
+      },
+      {
+        "bus_route_id": "Q5",
+        "violation_count": 130,
+        "avg_impact": 2.9,
+        "impact_variability": 0.65,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.28
+      },
+      {
+        "bus_route_id": "Q53+",
+        "violation_count": 610,
+        "avg_impact": 3.42,
+        "impact_variability": 0.77,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.42
+      },
+      {
+        "bus_route_id": "Q54",
+        "violation_count": 593,
+        "avg_impact": 3.25,
+        "impact_variability": 0.72,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.27
+      },
+      {
+        "bus_route_id": "Q58",
+        "violation_count": 67,
+        "avg_impact": 3.14,
+        "impact_variability": 0.73,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.27
+      },
+      {
+        "bus_route_id": "Q69",
+        "violation_count": 90,
+        "avg_impact": 3.37,
+        "impact_variability": 0.77,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.44
+      },
+      {
+        "bus_route_id": "S46",
+        "violation_count": 106,
+        "avg_impact": 3.36,
+        "impact_variability": 0.72,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.54
+      },
+      {
+        "bus_route_id": "S79+",
+        "violation_count": 104,
+        "avg_impact": 3.16,
+        "impact_variability": 0.87,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.46
+      }
+    ],
+    "problem_routes": [
+      {
+        "bus_route_id": "M2",
+        "violation_count": 1395,
+        "avg_impact": 4.27,
+        "impact_variability": 0.98,
+        "avg_speed": 6.95,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.34
+      },
+      {
+        "bus_route_id": "M34+",
+        "violation_count": 292,
+        "avg_impact": 4.23,
+        "impact_variability": 0.94,
+        "avg_speed": 5.57,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.36
+      },
+      {
+        "bus_route_id": "M15+",
+        "violation_count": 2753,
+        "avg_impact": 4.1,
+        "impact_variability": 0.96,
+        "avg_speed": 8.25,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.39
+      },
+      {
+        "bus_route_id": "M42",
+        "violation_count": 1114,
+        "avg_impact": 4.03,
+        "impact_variability": 0.87,
+        "avg_speed": 5.16,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.41
+      },
+      {
+        "bus_route_id": "M4",
+        "violation_count": 515,
+        "avg_impact": 3.96,
+        "impact_variability": 1.14,
+        "avg_speed": 6.07,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.36
+      },
+      {
+        "bus_route_id": "M23+",
+        "violation_count": 237,
+        "avg_impact": 3.84,
+        "impact_variability": 1.04,
+        "avg_speed": 5.82,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.29
+      },
+      {
+        "bus_route_id": "M101",
+        "violation_count": 4999,
+        "avg_impact": 3.78,
+        "impact_variability": 1.01,
+        "avg_speed": 6.53,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.32
+      },
+      {
+        "bus_route_id": "M60+",
+        "violation_count": 380,
+        "avg_impact": 3.47,
+        "impact_variability": 0.94,
+        "avg_speed": 10.9,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.28
+      },
+      {
+        "bus_route_id": "B62",
+        "violation_count": 229,
+        "avg_impact": 3.46,
+        "impact_variability": 0.77,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.34
+      },
+      {
+        "bus_route_id": "M100",
+        "violation_count": 1238,
+        "avg_impact": 3.44,
+        "impact_variability": 1.01,
+        "avg_speed": 6.27,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.35
+      },
+      {
+        "bus_route_id": "Q53+",
+        "violation_count": 610,
+        "avg_impact": 3.42,
+        "impact_variability": 0.77,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.42
+      },
+      {
+        "bus_route_id": "B42",
+        "violation_count": 103,
+        "avg_impact": 3.38,
+        "impact_variability": 0.67,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.56
+      },
+      {
+        "bus_route_id": "Q69",
+        "violation_count": 90,
+        "avg_impact": 3.37,
+        "impact_variability": 0.77,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.44
+      },
+      {
+        "bus_route_id": "S46",
+        "violation_count": 106,
+        "avg_impact": 3.36,
+        "impact_variability": 0.72,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.54
+      },
+      {
+        "bus_route_id": "Q44+",
+        "violation_count": 1263,
+        "avg_impact": 3.26,
+        "impact_variability": 0.79,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.38
+      },
+      {
+        "bus_route_id": "Q54",
+        "violation_count": 593,
+        "avg_impact": 3.25,
+        "impact_variability": 0.72,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.27
+      },
+      {
+        "bus_route_id": "B44+",
+        "violation_count": 1096,
+        "avg_impact": 3.23,
+        "impact_variability": 0.76,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.4
+      },
+      {
+        "bus_route_id": "BX5",
+        "violation_count": 74,
+        "avg_impact": 3.19,
+        "impact_variability": 0.72,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.43
+      },
+      {
+        "bus_route_id": "B26",
+        "violation_count": 89,
+        "avg_impact": 3.18,
+        "impact_variability": 0.76,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.33
+      },
+      {
+        "bus_route_id": "B82+",
+        "violation_count": 747,
+        "avg_impact": 3.18,
+        "impact_variability": 0.82,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.45
+      },
+      {
+        "bus_route_id": "S79+",
+        "violation_count": 104,
+        "avg_impact": 3.16,
+        "impact_variability": 0.87,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.46
+      },
+      {
+        "bus_route_id": "Q58",
+        "violation_count": 67,
+        "avg_impact": 3.14,
+        "impact_variability": 0.73,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.27
+      },
+      {
+        "bus_route_id": "Q43",
+        "violation_count": 288,
+        "avg_impact": 3.13,
+        "impact_variability": 0.78,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.56
+      },
+      {
+        "bus_route_id": "B25",
+        "violation_count": 379,
+        "avg_impact": 3.13,
+        "impact_variability": 0.72,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.4
+      },
+      {
+        "bus_route_id": "BX28",
+        "violation_count": 631,
+        "avg_impact": 3.13,
+        "impact_variability": 0.85,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.37
+      },
+      {
+        "bus_route_id": "M14+",
+        "violation_count": 434,
+        "avg_impact": 3.12,
+        "impact_variability": 0.71,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.34
+      },
+      {
+        "bus_route_id": "BX12+",
+        "violation_count": 887,
+        "avg_impact": 3.08,
+        "impact_variability": 0.74,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.43
+      },
+      {
+        "bus_route_id": "B35",
+        "violation_count": 702,
+        "avg_impact": 3.07,
+        "impact_variability": 0.89,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.37
+      },
+      {
+        "bus_route_id": "B46+",
+        "violation_count": 759,
+        "avg_impact": 3.06,
+        "impact_variability": 0.73,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.37
+      },
+      {
+        "bus_route_id": "BX38",
+        "violation_count": 161,
+        "avg_impact": 3.01,
+        "impact_variability": 0.86,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.42
+      },
+      {
+        "bus_route_id": "BX28-BX38",
+        "violation_count": 61,
+        "avg_impact": 2.97,
+        "impact_variability": 0.61,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.38
+      },
+      {
+        "bus_route_id": "B41",
+        "violation_count": 635,
+        "avg_impact": 2.92,
+        "impact_variability": 0.82,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.31
+      },
+      {
+        "bus_route_id": "Q5",
+        "violation_count": 130,
+        "avg_impact": 2.9,
+        "impact_variability": 0.65,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.28
+      },
+      {
+        "bus_route_id": "BX6+",
+        "violation_count": 888,
+        "avg_impact": 2.88,
+        "impact_variability": 0.84,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.35
+      },
+      {
+        "bus_route_id": "BX41+",
+        "violation_count": 1841,
+        "avg_impact": 2.88,
+        "impact_variability": 0.73,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.37
+      },
+      {
+        "bus_route_id": "M79+",
+        "violation_count": 394,
+        "avg_impact": 2.86,
+        "impact_variability": 0.8,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.39
+      },
+      {
+        "bus_route_id": "BX19",
+        "violation_count": 1737,
+        "avg_impact": 2.79,
+        "impact_variability": 0.76,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.33
+      },
+      {
+        "bus_route_id": "BX36",
+        "violation_count": 1192,
+        "avg_impact": 2.79,
+        "impact_variability": 0.79,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.34
+      },
+      {
+        "bus_route_id": "BX35",
+        "violation_count": 504,
+        "avg_impact": 2.7,
+        "impact_variability": 0.7,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.32
+      },
+      {
+        "bus_route_id": "M86+",
+        "violation_count": 283,
+        "avg_impact": 2.65,
+        "impact_variability": 0.7,
+        "avg_speed": 6.5,
+        "is_cuny": 0,
+        "rush_hour_rate": 0.38
+      }
+    ],
+    "cuny_routes": [
+      {
+        "bus_route_id": "M2",
+        "violation_count": 1395,
+        "avg_impact": 4.27,
+        "impact_variability": 0.98,
+        "avg_speed": 6.95,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.34
+      },
+      {
+        "bus_route_id": "M34+",
+        "violation_count": 292,
+        "avg_impact": 4.23,
+        "impact_variability": 0.94,
+        "avg_speed": 5.57,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.36
+      },
+      {
+        "bus_route_id": "M15+",
+        "violation_count": 2753,
+        "avg_impact": 4.1,
+        "impact_variability": 0.96,
+        "avg_speed": 8.25,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.39
+      },
+      {
+        "bus_route_id": "M42",
+        "violation_count": 1114,
+        "avg_impact": 4.03,
+        "impact_variability": 0.87,
+        "avg_speed": 5.16,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.41
+      },
+      {
+        "bus_route_id": "M4",
+        "violation_count": 515,
+        "avg_impact": 3.96,
+        "impact_variability": 1.14,
+        "avg_speed": 6.07,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.36
+      },
+      {
+        "bus_route_id": "M23+",
+        "violation_count": 237,
+        "avg_impact": 3.84,
+        "impact_variability": 1.04,
+        "avg_speed": 5.82,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.29
+      },
+      {
+        "bus_route_id": "M101",
+        "violation_count": 4999,
+        "avg_impact": 3.78,
+        "impact_variability": 1.01,
+        "avg_speed": 6.53,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.32
+      },
+      {
+        "bus_route_id": "M60+",
+        "violation_count": 380,
+        "avg_impact": 3.47,
+        "impact_variability": 0.94,
+        "avg_speed": 10.9,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.28
+      },
+      {
+        "bus_route_id": "M100",
+        "violation_count": 1238,
+        "avg_impact": 3.44,
+        "impact_variability": 1.01,
+        "avg_speed": 6.27,
+        "is_cuny": 1,
+        "rush_hour_rate": 0.35
+      }
+    ],
+    "summary_stats": {
+      "total_routes": 40,
+      "cuny_routes_count": 9,
+      "problem_routes_count": 40,
+      "avg_speed_all_routes": 6.5755,
+      "avg_impact_all_routes": 3.2692499999999995
+    }
+  },
+  "predictions": {
+    "high_impact_threshold": 3.9,
+    "high_risk_periods": [
+      {
+        "time_period": "Sun 07:00",
+        "predicted_impact": 4.58,
+        "expected_violations": 76,
+        "recommendation": "Increase enforcement during Sun 07:00"
+      },
+      {
+        "time_period": "Sat 08:00",
+        "predicted_impact": 4.57,
+        "expected_violations": 124,
+        "recommendation": "Increase enforcement during Sat 08:00"
+      },
+      {
+        "time_period": "Sun 09:00",
+        "predicted_impact": 4.45,
+        "expected_violations": 113,
+        "recommendation": "Increase enforcement during Sun 09:00"
+      },
+      {
+        "time_period": "Wed 08:00",
+        "predicted_impact": 4.44,
+        "expected_violations": 290,
+        "recommendation": "Increase enforcement during Wed 08:00"
+      },
+      {
+        "time_period": "Sun 18:00",
+        "predicted_impact": 4.42,
+        "expected_violations": 164,
+        "recommendation": "Increase enforcement during Sun 18:00"
+      },
+      {
+        "time_period": "Tue 07:00",
+        "predicted_impact": 4.4,
+        "expected_violations": 317,
+        "recommendation": "Increase enforcement during Tue 07:00"
+      },
+      {
+        "time_period": "Sat 09:00",
+        "predicted_impact": 4.4,
+        "expected_violations": 142,
+        "recommendation": "Increase enforcement during Sat 09:00"
+      },
+      {
+        "time_period": "Tue 18:00",
+        "predicted_impact": 4.39,
+        "expected_violations": 242,
+        "recommendation": "Increase enforcement during Tue 18:00"
+      },
+      {
+        "time_period": "Sat 19:00",
+        "predicted_impact": 4.39,
+        "expected_violations": 143,
+        "recommendation": "Increase enforcement during Sat 19:00"
+      },
+      {
+        "time_period": "Thu 07:00",
+        "predicted_impact": 4.38,
+        "expected_violations": 386,
+        "recommendation": "Increase enforcement during Thu 07:00"
+      },
+      {
+        "time_period": "Mon 07:00",
+        "predicted_impact": 4.37,
+        "expected_violations": 344,
+        "recommendation": "Increase enforcement during Mon 07:00"
+      },
+      {
+        "time_period": "Fri 08:00",
+        "predicted_impact": 4.36,
+        "expected_violations": 411,
+        "recommendation": "Increase enforcement during Fri 08:00"
+      },
+      {
+        "time_period": "Mon 08:00",
+        "predicted_impact": 4.34,
+        "expected_violations": 300,
+        "recommendation": "Increase enforcement during Mon 08:00"
+      },
+      {
+        "time_period": "Mon 18:00",
+        "predicted_impact": 4.34,
+        "expected_violations": 297,
+        "recommendation": "Increase enforcement during Mon 18:00"
+      },
+      {
+        "time_period": "Fri 18:00",
+        "predicted_impact": 4.34,
+        "expected_violations": 282,
+        "recommendation": "Increase enforcement during Fri 18:00"
+      },
+      {
+        "time_period": "Wed 07:00",
+        "predicted_impact": 4.33,
+        "expected_violations": 282,
+        "recommendation": "Increase enforcement during Wed 07:00"
+      },
+      {
+        "time_period": "Tue 17:00",
+        "predicted_impact": 4.33,
+        "expected_violations": 282,
+        "recommendation": "Increase enforcement during Tue 17:00"
+      },
+      {
+        "time_period": "Mon 19:00",
+        "predicted_impact": 4.33,
+        "expected_violations": 186,
+        "recommendation": "Increase enforcement during Mon 19:00"
+      },
+      {
+        "time_period": "Wed 19:00",
+        "predicted_impact": 4.33,
+        "expected_violations": 227,
+        "recommendation": "Increase enforcement during Wed 19:00"
+      },
+      {
+        "time_period": "Thu 08:00",
+        "predicted_impact": 4.31,
+        "expected_violations": 406,
+        "recommendation": "Increase enforcement during Thu 08:00"
+      },
+      {
+        "time_period": "Wed 09:00",
+        "predicted_impact": 4.31,
+        "expected_violations": 250,
+        "recommendation": "Increase enforcement during Wed 09:00"
+      },
+      {
+        "time_period": "Thu 09:00",
+        "predicted_impact": 4.31,
+        "expected_violations": 417,
+        "recommendation": "Increase enforcement during Thu 09:00"
+      },
+      {
+        "time_period": "Sun 17:00",
+        "predicted_impact": 4.31,
+        "expected_violations": 165,
+        "recommendation": "Increase enforcement during Sun 17:00"
+      },
+      {
+        "time_period": "Wed 18:00",
+        "predicted_impact": 4.3,
+        "expected_violations": 358,
+        "recommendation": "Increase enforcement during Wed 18:00"
+      },
+      {
+        "time_period": "Fri 07:00",
+        "predicted_impact": 4.29,
+        "expected_violations": 391,
+        "recommendation": "Increase enforcement during Fri 07:00"
+      },
+      {
+        "time_period": "Mon 09:00",
+        "predicted_impact": 4.29,
+        "expected_violations": 341,
+        "recommendation": "Increase enforcement during Mon 09:00"
+      },
+      {
+        "time_period": "Thu 17:00",
+        "predicted_impact": 4.29,
+        "expected_violations": 295,
+        "recommendation": "Increase enforcement during Thu 17:00"
+      },
+      {
+        "time_period": "Fri 17:00",
+        "predicted_impact": 4.29,
+        "expected_violations": 316,
+        "recommendation": "Increase enforcement during Fri 17:00"
+      },
+      {
+        "time_period": "Sat 17:00",
+        "predicted_impact": 4.29,
+        "expected_violations": 200,
+        "recommendation": "Increase enforcement during Sat 17:00"
+      },
+      {
+        "time_period": "Fri 19:00",
+        "predicted_impact": 4.29,
+        "expected_violations": 210,
+        "recommendation": "Increase enforcement during Fri 19:00"
+      },
+      {
+        "time_period": "Tue 09:00",
+        "predicted_impact": 4.28,
+        "expected_violations": 333,
+        "recommendation": "Increase enforcement during Tue 09:00"
+      },
+      {
+        "time_period": "Wed 17:00",
+        "predicted_impact": 4.27,
+        "expected_violations": 383,
+        "recommendation": "Increase enforcement during Wed 17:00"
+      },
+      {
+        "time_period": "Thu 19:00",
+        "predicted_impact": 4.27,
+        "expected_violations": 214,
+        "recommendation": "Increase enforcement during Thu 19:00"
+      },
+      {
+        "time_period": "Mon 17:00",
+        "predicted_impact": 4.26,
+        "expected_violations": 304,
+        "recommendation": "Increase enforcement during Mon 17:00"
+      },
+      {
+        "time_period": "Sun 19:00",
+        "predicted_impact": 4.25,
+        "expected_violations": 144,
+        "recommendation": "Increase enforcement during Sun 19:00"
+      },
+      {
+        "time_period": "Tue 08:00",
+        "predicted_impact": 4.24,
+        "expected_violations": 281,
+        "recommendation": "Increase enforcement during Tue 08:00"
+      },
+      {
+        "time_period": "Fri 09:00",
+        "predicted_impact": 4.23,
+        "expected_violations": 371,
+        "recommendation": "Increase enforcement during Fri 09:00"
+      },
+      {
+        "time_period": "Tue 19:00",
+        "predicted_impact": 4.23,
+        "expected_violations": 176,
+        "recommendation": "Increase enforcement during Tue 19:00"
+      },
+      {
+        "time_period": "Sat 07:00",
+        "predicted_impact": 4.22,
+        "expected_violations": 118,
+        "recommendation": "Increase enforcement during Sat 07:00"
+      },
+      {
+        "time_period": "Sun 08:00",
+        "predicted_impact": 4.2,
+        "expected_violations": 92,
+        "recommendation": "Increase enforcement during Sun 08:00"
+      },
+      {
+        "time_period": "Sat 18:00",
+        "predicted_impact": 4.18,
+        "expected_violations": 215,
+        "recommendation": "Increase enforcement during Sat 18:00"
+      },
+      {
+        "time_period": "Thu 18:00",
+        "predicted_impact": 4.17,
+        "expected_violations": 307,
+        "recommendation": "Increase enforcement during Thu 18:00"
+      },
+      {
+        "time_period": "Thu 12:00",
+        "predicted_impact": 2.93,
+        "expected_violations": 352,
+        "recommendation": "Increase enforcement during Thu 12:00"
+      },
+      {
+        "time_period": "Thu 14:00",
+        "predicted_impact": 2.92,
+        "expected_violations": 380,
+        "recommendation": "Increase enforcement during Thu 14:00"
+      },
+      {
+        "time_period": "Thu 10:00",
+        "predicted_impact": 2.9,
+        "expected_violations": 382,
+        "recommendation": "Increase enforcement during Thu 10:00"
+      },
+      {
+        "time_period": "Wed 15:00",
+        "predicted_impact": 2.89,
+        "expected_violations": 425,
+        "recommendation": "Increase enforcement during Wed 15:00"
+      },
+      {
+        "time_period": "Tue 13:00",
+        "predicted_impact": 2.88,
+        "expected_violations": 333,
+        "recommendation": "Increase enforcement during Tue 13:00"
+      },
+      {
+        "time_period": "Fri 10:00",
+        "predicted_impact": 2.87,
+        "expected_violations": 330,
+        "recommendation": "Increase enforcement during Fri 10:00"
+      },
+      {
+        "time_period": "Thu 11:00",
+        "predicted_impact": 2.87,
+        "expected_violations": 346,
+        "recommendation": "Increase enforcement during Thu 11:00"
+      },
+      {
+        "time_period": "Tue 16:00",
+        "predicted_impact": 2.86,
+        "expected_violations": 342,
+        "recommendation": "Increase enforcement during Tue 16:00"
+      },
+      {
+        "time_period": "Tue 14:00",
+        "predicted_impact": 2.85,
+        "expected_violations": 338,
+        "recommendation": "Increase enforcement during Tue 14:00"
+      },
+      {
+        "time_period": "Mon 13:00",
+        "predicted_impact": 2.84,
+        "expected_violations": 341,
+        "recommendation": "Increase enforcement during Mon 13:00"
+      },
+      {
+        "time_period": "Wed 14:00",
+        "predicted_impact": 2.84,
+        "expected_violations": 446,
+        "recommendation": "Increase enforcement during Wed 14:00"
+      },
+      {
+        "time_period": "Fri 14:00",
+        "predicted_impact": 2.84,
+        "expected_violations": 339,
+        "recommendation": "Increase enforcement during Fri 14:00"
+      },
+      {
+        "time_period": "Thu 15:00",
+        "predicted_impact": 2.84,
+        "expected_violations": 332,
+        "recommendation": "Increase enforcement during Thu 15:00"
+      },
+      {
+        "time_period": "Fri 11:00",
+        "predicted_impact": 2.83,
+        "expected_violations": 337,
+        "recommendation": "Increase enforcement during Fri 11:00"
+      },
+      {
+        "time_period": "Mon 14:00",
+        "predicted_impact": 2.83,
+        "expected_violations": 357,
+        "recommendation": "Increase enforcement during Mon 14:00"
+      },
+      {
+        "time_period": "Mon 16:00",
+        "predicted_impact": 2.83,
+        "expected_violations": 335,
+        "recommendation": "Increase enforcement during Mon 16:00"
+      },
+      {
+        "time_period": "Thu 16:00",
+        "predicted_impact": 2.83,
+        "expected_violations": 380,
+        "recommendation": "Increase enforcement during Thu 16:00"
+      },
+      {
+        "time_period": "Mon 11:00",
+        "predicted_impact": 2.82,
+        "expected_violations": 332,
+        "recommendation": "Increase enforcement during Mon 11:00"
+      },
+      {
+        "time_period": "Wed 13:00",
+        "predicted_impact": 2.82,
+        "expected_violations": 485,
+        "recommendation": "Increase enforcement during Wed 13:00"
+      },
+      {
+        "time_period": "Tue 11:00",
+        "predicted_impact": 2.8,
+        "expected_violations": 337,
+        "recommendation": "Increase enforcement during Tue 11:00"
+      },
+      {
+        "time_period": "Thu 13:00",
+        "predicted_impact": 2.79,
+        "expected_violations": 341,
+        "recommendation": "Increase enforcement during Thu 13:00"
+      },
+      {
+        "time_period": "Wed 16:00",
+        "predicted_impact": 2.78,
+        "expected_violations": 409,
+        "recommendation": "Increase enforcement during Wed 16:00"
+      },
+      {
+        "time_period": "Tue 12:00",
+        "predicted_impact": 2.77,
+        "expected_violations": 340,
+        "recommendation": "Increase enforcement during Tue 12:00"
+      }
+    ],
+    "total_high_risk_periods": 65
+  },
+  "key_insights": [
+    "Peak violation hour: 14:00 with 2209 violations",
+    "Highest impact CUNY route: M2 (impact: 4.27)",
+    "Critically low average speed: 6.6 mph across all routes",
+    "Identified 65 high-risk time periods requiring attention",
+    "Focus enforcement during identified peak hours",
+    "Prioritize improvement on high-impact CUNY routes",
+    "Consider dynamic scheduling based on predicted patterns",
+    "Implement real-time monitoring for problem routes"
+  ]
+}

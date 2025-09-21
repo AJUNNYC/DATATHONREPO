@@ -1,0 +1,608 @@
+{
+  "analysis_timestamp": "2025-09-21T15:03:19.068501",
+  "dataset_size": 50000,
+  "model_performance": {
+    "linear_regression": {
+      "mse": 0.15100784340393786,
+      "rmse": 0.38859727662959487,
+      "mae": 0.3333370413343378,
+      "r2": 0.784958849556169,
+      "predictions": "[2.97484374 3.1373051  2.86874921 ... 4.59005308 3.02283684 3.72810657]"
+    },
+    "ridge_regression": {
+      "mse": 0.15100782660268663,
+      "rmse": 0.38859725501177517,
+      "mae": 0.3333352981648277,
+      "r2": 0.7849588734818163,
+      "predictions": "[2.97486155 3.13730227 2.86876533 ... 4.59004997 3.02284608 3.72808762]"
+    },
+    "random_forest": {
+      "mse": 1.786407742813788e-08,
+      "rmse": 0.00013365656522647094,
+      "mae": 6.710994219727473e-06,
+      "r2": 0.9999999745608461,
+      "predictions": "[2.81397323 3.51416636 2.76391612 ... 4.46747243 2.77752758 3.8236967 ]",
+      "feature_importance": "                      feature    importance\n4                is_rush_hour  5.083674e-01\n8      violation_type_encoded  3.199690e-01\n1                 day_of_week  9.279326e-02\n3                  is_weekend  6.720232e-02\n10  route_violation_frequency  1.156613e-02\n11             route_avg_hour  2.644990e-05\n12       route_rush_hour_rate  2.400269e-05\n14       distance_from_center  1.653660e-05\n15           historical_speed  1.335631e-05\n6               is_cuny_route  1.141877e-05\n16     speed_category_encoded  6.881469e-06\n7            is_express_route  3.187133e-06\n9    violation_status_encoded  2.260615e-08\n13                     in_cbd  2.027703e-08\n0                        hour  1.396123e-08\n5          is_peak_congestion  1.947236e-09\n2                       month  1.649650e-15"
+    },
+    "gradient_boosting": {
+      "mse": 0.00014699046685785256,
+      "rmse": 0.012123962506451947,
+      "mae": 0.008081503682511022,
+      "r2": 0.9997906797528865,
+      "predictions": "[2.80821721 3.53046692 2.77238211 ... 4.48658648 2.7787914  3.86642108]",
+      "feature_importance": "                      feature    importance\n4                is_rush_hour  5.085359e-01\n8      violation_type_encoded  3.143686e-01\n3                  is_weekend  1.011458e-01\n1                 day_of_week  6.564506e-02\n10  route_violation_frequency  9.493418e-03\n15           historical_speed  7.737770e-04\n12       route_rush_hour_rate  2.671931e-05\n16     speed_category_encoded  6.666186e-06\n11             route_avg_hour  3.604579e-06\n14       distance_from_center  4.150942e-07\n0                        hour  0.000000e+00\n5          is_peak_congestion  0.000000e+00\n2                       month  0.000000e+00\n7            is_express_route  0.000000e+00\n6               is_cuny_route  0.000000e+00\n9    violation_status_encoded  0.000000e+00\n13                     in_cbd  0.000000e+00"
+    },
+    "xgboost": {
+      "mse": 6.658975470471605e-07,
+      "rmse": 0.0008160254573523798,
+      "mae": 0.0002782249871878486,
+      "r2": 0.9999990517355167,
+      "predictions": "[2.813908  3.5149984 2.7640295 ... 4.4661355 2.7775686 3.823273 ]",
+      "feature_importance": "                      feature    importance\n4                is_rush_hour  7.277105e-01\n8      violation_type_encoded  1.601582e-01\n1                 day_of_week  1.094776e-01\n10  route_violation_frequency  2.626769e-03\n7            is_express_route  7.149152e-06\n15           historical_speed  6.674902e-06\n12       route_rush_hour_rate  4.860648e-06\n11             route_avg_hour  4.014756e-06\n6               is_cuny_route  2.419739e-06\n14       distance_from_center  1.315395e-06\n13                     in_cbd  2.663145e-07\n5          is_peak_congestion  5.477687e-08\n9    violation_status_encoded  4.221030e-08\n0                        hour  4.144569e-08\n3                  is_weekend  0.000000e+00\n2                       month  0.000000e+00\n16     speed_category_encoded  0.000000e+00"
+    }
+  },
+  "route_optimization": {
+    "route_performance": "   bus_route_id  avg_delay_severity  delay_variability  violation_count  rush_hour_rate  avg_speed\n0           B25               3.607              0.766              672           0.402      6.500\n1           B26               3.404              0.798              170           0.335      6.500\n2           B35               3.477              0.945             1202           0.355      6.500\n3           B41               3.273              0.807             1301           0.261      6.500\n4           B42               3.611              0.838              165           0.570      6.500\n5          B44+               3.684              0.857             1744           0.393      6.500\n6          B46+               3.507              0.824             1449           0.371      6.500\n7           B62               3.819              0.860              369           0.363      6.500\n8          B82+               3.705              0.834             1305           0.410      6.500\n9         BX12+               3.543              0.835             1511           0.377      6.500\n10         BX19               3.291              0.768             3427           0.311      6.500\n11         BX28               3.526              0.919             1053           0.351      6.500\n12    BX28-BX38               3.265              0.662              147           0.347      6.500\n13         BX35               3.122              0.690              897           0.304      6.500\n14         BX36               3.306              0.790             2078           0.352      6.500\n15         BX38               3.267              0.816              288           0.424      6.500\n16        BX41+               3.444              0.775             2932           0.353      6.500\n17          BX5               3.424              0.668              111           0.387      6.500\n18         BX6+               3.270              0.813             1591           0.340      6.500\n19         M100               3.175              0.760             2380           0.324      6.274\n20         M101               3.528              0.822             7958           0.314      6.525\n21         M14+               3.577              0.758              641           0.312      6.500\n22         M15+               3.837              0.802             4368           0.406      8.249\n23           M2               3.864              0.793             2077           0.336      6.946\n24         M23+               3.477              0.844              355           0.315      5.819\n25         M34+               3.731              0.722              432           0.361      5.569\n26           M4               3.460              0.903              835           0.354      6.073\n27          M42               3.673              0.779             1661           0.391      5.165\n28         M60+               3.110              0.746              627           0.292     10.900\n29         M79+               3.322              0.768              695           0.340      6.500\n30         M86+               3.041              0.735              536           0.317      6.500\n31          Q43               3.637              0.840              480           0.550      6.500\n32         Q44+               3.766              0.869             1955           0.376      6.500\n33           Q5               3.304              0.728              231           0.320      6.500\n34         Q53+               3.794              0.882              912           0.418      6.500\n35          Q54               3.687              0.806              842           0.265      6.500\n36          Q58               3.347              0.706              107           0.243      6.500\n37          Q69               3.585              0.847              124           0.411      6.500\n38          S46               3.826              0.720              158           0.570      6.500\n39         S79+               3.279              0.964              214           0.444      6.500",
+    "optimization_opportunities": [
+      {
+        "route": "B25",
+        "issue": "High Delay Severity",
+        "severity": 3.607,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "B25",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 672,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "B26",
+        "issue": "High Delay Severity",
+        "severity": 3.404,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "B26",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 170,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "B35",
+        "issue": "High Delay Severity",
+        "severity": 3.477,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "B35",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 1202,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "B41",
+        "issue": "High Delay Severity",
+        "severity": 3.273,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "B41",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 1301,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "B42",
+        "issue": "High Delay Severity",
+        "severity": 3.611,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "B42",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 165,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "B44+",
+        "issue": "High Delay Severity",
+        "severity": 3.684,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "B44+",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 1744,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "B46+",
+        "issue": "High Delay Severity",
+        "severity": 3.507,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "B46+",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 1449,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "B62",
+        "issue": "High Delay Severity",
+        "severity": 3.819,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "B62",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 369,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "B82+",
+        "issue": "High Delay Severity",
+        "severity": 3.705,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "B82+",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 1305,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "BX12+",
+        "issue": "High Delay Severity",
+        "severity": 3.543,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "BX12+",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 1511,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "BX19",
+        "issue": "High Delay Severity",
+        "severity": 3.291,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "BX19",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 3427,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "BX28",
+        "issue": "High Delay Severity",
+        "severity": 3.526,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "BX28",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 1053,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "BX28-BX38",
+        "issue": "High Delay Severity",
+        "severity": 3.265,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "BX28-BX38",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 147,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "BX35",
+        "issue": "High Delay Severity",
+        "severity": 3.122,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "BX35",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 897,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "BX36",
+        "issue": "High Delay Severity",
+        "severity": 3.306,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "BX36",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 2078,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "BX38",
+        "issue": "High Delay Severity",
+        "severity": 3.267,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "BX38",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 288,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "BX41+",
+        "issue": "High Delay Severity",
+        "severity": 3.444,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "BX41+",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 2932,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "BX5",
+        "issue": "High Delay Severity",
+        "severity": 3.424,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "BX5",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 111,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "BX6+",
+        "issue": "High Delay Severity",
+        "severity": 3.27,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "BX6+",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 1591,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "M100",
+        "issue": "High Delay Severity",
+        "severity": 3.175,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "M100",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.274,
+        "violations": 2380,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "M101",
+        "issue": "High Delay Severity",
+        "severity": 3.528,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "M101",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.525,
+        "violations": 7958,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "M14+",
+        "issue": "High Delay Severity",
+        "severity": 3.577,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "M14+",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 641,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "M15+",
+        "issue": "High Delay Severity",
+        "severity": 3.837,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "M2",
+        "issue": "High Delay Severity",
+        "severity": 3.864,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "M2",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.946,
+        "violations": 2077,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "M23+",
+        "issue": "High Delay Severity",
+        "severity": 3.477,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "M23+",
+        "issue": "Slow Speed + High Violations",
+        "speed": 5.819,
+        "violations": 355,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "M34+",
+        "issue": "High Delay Severity",
+        "severity": 3.731,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "M34+",
+        "issue": "Slow Speed + High Violations",
+        "speed": 5.569,
+        "violations": 432,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "M4",
+        "issue": "High Delay Severity",
+        "severity": 3.46,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "M4",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.073,
+        "violations": 835,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "M42",
+        "issue": "High Delay Severity",
+        "severity": 3.673,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "M42",
+        "issue": "Slow Speed + High Violations",
+        "speed": 5.165,
+        "violations": 1661,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "M60+",
+        "issue": "High Delay Severity",
+        "severity": 3.11,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "M79+",
+        "issue": "High Delay Severity",
+        "severity": 3.322,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "M79+",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 695,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "M86+",
+        "issue": "High Delay Severity",
+        "severity": 3.041,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "M86+",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 536,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "Q43",
+        "issue": "High Delay Severity",
+        "severity": 3.637,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "Q43",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 480,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "Q44+",
+        "issue": "High Delay Severity",
+        "severity": 3.766,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "Q44+",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 1955,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "Q5",
+        "issue": "High Delay Severity",
+        "severity": 3.304,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "Q5",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 231,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "Q53+",
+        "issue": "High Delay Severity",
+        "severity": 3.794,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "Q53+",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 912,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "Q54",
+        "issue": "High Delay Severity",
+        "severity": 3.687,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "Q54",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 842,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "Q58",
+        "issue": "High Delay Severity",
+        "severity": 3.347,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "Q58",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 107,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "Q69",
+        "issue": "High Delay Severity",
+        "severity": 3.585,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "Q69",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 124,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "S46",
+        "issue": "High Delay Severity",
+        "severity": 3.826,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "S46",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 158,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      },
+      {
+        "route": "S79+",
+        "issue": "High Delay Severity",
+        "severity": 3.279,
+        "recommendation": "Increase enforcement, consider dedicated lanes"
+      },
+      {
+        "route": "S79+",
+        "issue": "Slow Speed + High Violations",
+        "speed": 6.5,
+        "violations": 214,
+        "recommendation": "Priority enforcement corridor, bus lane improvements"
+      }
+    ],
+    "total_routes_analyzed": 40,
+    "routes_needing_attention": 78
+  },
+  "route_predictions": {
+    "M15+": {
+      "route_id": "M15+",
+      "predicted_delay_severity": 4.972409640461965,
+      "severity_level": "High",
+      "description": "Significant delays likely",
+      "model_used": "random_forest",
+      "confidence": 0.9999999745608461
+    },
+    "M2": {
+      "route_id": "M2",
+      "predicted_delay_severity": 4.972409640461965,
+      "severity_level": "High",
+      "description": "Significant delays likely",
+      "model_used": "random_forest",
+      "confidence": 0.9999999745608461
+    },
+    "M42": {
+      "route_id": "M42",
+      "predicted_delay_severity": 4.972409640461965,
+      "severity_level": "High",
+      "description": "Significant delays likely",
+      "model_used": "random_forest",
+      "confidence": 0.9999999745608461
+    },
+    "M101": {
+      "route_id": "M101",
+      "predicted_delay_severity": 4.972409640461965,
+      "severity_level": "High",
+      "description": "Significant delays likely",
+      "model_used": "random_forest",
+      "confidence": 0.9999999745608461
+    },
+    "M100": {
+      "route_id": "M100",
+      "predicted_delay_severity": 4.972409640461965,
+      "severity_level": "High",
+      "description": "Significant delays likely",
+      "model_used": "random_forest",
+      "confidence": 0.9999999745608461
+    }
+  },
+  "ml_insights": [
+    "Best performing model: random_forest (R\u00b2 = 1.000)",
+    "Most important factor for delays: is_rush_hour",
+    "78 out of 40 routes need optimization",
+    "ML model can predict delays with reasonable accuracy for route planning",
+    "Focus enforcement on high-delay-severity routes during rush hours",
+    "Consider dynamic scheduling based on predicted delay patterns",
+    "Use real-time predictions to inform passenger arrival estimates"
+  ]
+}
