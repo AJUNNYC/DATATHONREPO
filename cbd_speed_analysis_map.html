@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e67a3b5be5a184921babcd296134ad34 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+        <div style="position: fixed;
+                    bottom: 50px; left: 50px; width: 250px; height: 140px;
+                    background-color: white; border:2px solid grey; z-index:9999;
+                    font-size:14px; padding: 10px">
+        <p><b>CBD Bus Speed Analysis</b></p>
+        <p><i class="fa fa-bus" style="color:green"></i> Fast Routes (>12 mph)</p>
+        <p><i class="fa fa-bus" style="color:orange"></i> Moderate (8-12 mph)</p>
+        <p><i class="fa fa-bus" style="color:red"></i> Slow Routes (<8 mph)</p>
+        <p><i class="fa fa-square" style="color:red; opacity:0.3"></i> CBD Zone</p>
+        </div>
+        
+    
+            <div class="folium-map" id="map_e67a3b5be5a184921babcd296134ad34" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e67a3b5be5a184921babcd296134ad34 = L.map(
+                "map_e67a3b5be5a184921babcd296134ad34",
+                {
+                    center: [40.7438, -73.96350000000001],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a723d00c825156336c3c8f5e797ba1c0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a723d00c825156336c3c8f5e797ba1c0.addTo(map_e67a3b5be5a184921babcd296134ad34);
+        
+    
+            var polygon_8298c4cf23dc8fa7e441d5147143c9fa = L.polygon(
+                [[40.7829, -73.9903], [40.7829, -73.9367], [40.7047, -73.9367], [40.7047, -73.9903]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e67a3b5be5a184921babcd296134ad34);
+        
+    
+        var popup_d700870904be1085f8a843126fef84f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea0ffc04270a0ab87a6d55646bbd63ed = $(`<div id="html_ea0ffc04270a0ab87a6d55646bbd63ed" style="width: 100.0%; height: 100.0%;">Congestion Pricing Zone (CBD)</div>`)[0];
+                popup_d700870904be1085f8a843126fef84f3.setContent(html_ea0ffc04270a0ab87a6d55646bbd63ed);
+            
+        
+
+        polygon_8298c4cf23dc8fa7e441d5147143c9fa.bindPopup(popup_d700870904be1085f8a843126fef84f3)
+        ;
+
+        
+    
+    
+            var marker_d3418b5f2fb282d399cf7987d39de686 = L.marker(
+                [40.7505, -73.9934],
+                {
+}
+            ).addTo(map_e67a3b5be5a184921babcd296134ad34);
+        
+    
+            var icon_0822dd0a7021548ea8fb00eb6db341e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_37b6340d25908fa2c23d13791e2bf036 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3ede1efe0296b1c33c6cd9105c7ab4d = $(`<div id="html_a3ede1efe0296b1c33c6cd9105c7ab4d" style="width: 100.0%; height: 100.0%;">Route M15+<br>Avg Speed: 8.2 mph<br>Records: 28</div>`)[0];
+                popup_37b6340d25908fa2c23d13791e2bf036.setContent(html_a3ede1efe0296b1c33c6cd9105c7ab4d);
+            
+        
+
+        marker_d3418b5f2fb282d399cf7987d39de686.bindPopup(popup_37b6340d25908fa2c23d13791e2bf036)
+        ;
+
+        
+    
+    
+                marker_d3418b5f2fb282d399cf7987d39de686.setIcon(icon_0822dd0a7021548ea8fb00eb6db341e0);
+            
+    
+            var marker_33e842e25d8e4bcbf00c19e2df07e080 = L.marker(
+                [40.7614, -73.9776],
+                {
+}
+            ).addTo(map_e67a3b5be5a184921babcd296134ad34);
+        
+    
+            var icon_0d3e1e591d8982c6949bd1ebcc95abd0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5c4bef03d1f18333ff83b911d5b0439 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f72edf1c952be0d05192be279907eb3e = $(`<div id="html_f72edf1c952be0d05192be279907eb3e" style="width: 100.0%; height: 100.0%;">Route M2<br>Avg Speed: 6.9 mph<br>Records: 28</div>`)[0];
+                popup_a5c4bef03d1f18333ff83b911d5b0439.setContent(html_f72edf1c952be0d05192be279907eb3e);
+            
+        
+
+        marker_33e842e25d8e4bcbf00c19e2df07e080.bindPopup(popup_a5c4bef03d1f18333ff83b911d5b0439)
+        ;
+
+        
+    
+    
+                marker_33e842e25d8e4bcbf00c19e2df07e080.setIcon(icon_0d3e1e591d8982c6949bd1ebcc95abd0);
+            
+    
+            var marker_bb2c30c2cd3f707a39c81d443288acd6 = L.marker(
+                [40.7589, -73.9851],
+                {
+}
+            ).addTo(map_e67a3b5be5a184921babcd296134ad34);
+        
+    
+            var icon_1425eba8dd5d21c6eb6eb7354d683879 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf1d2806ba1d2e9859fe9e0e5677618e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8e9ad4afc52c8690eb9fc17de310bf0 = $(`<div id="html_f8e9ad4afc52c8690eb9fc17de310bf0" style="width: 100.0%; height: 100.0%;">Route M42<br>Avg Speed: 5.2 mph<br>Records: 28</div>`)[0];
+                popup_bf1d2806ba1d2e9859fe9e0e5677618e.setContent(html_f8e9ad4afc52c8690eb9fc17de310bf0);
+            
+        
+
+        marker_bb2c30c2cd3f707a39c81d443288acd6.bindPopup(popup_bf1d2806ba1d2e9859fe9e0e5677618e)
+        ;
+
+        
+    
+    
+                marker_bb2c30c2cd3f707a39c81d443288acd6.setIcon(icon_1425eba8dd5d21c6eb6eb7354d683879);
+            
+    
+            var marker_2c369f1de79b3102df0807123acc5008 = L.marker(
+                [40.7831, -73.9712],
+                {
+}
+            ).addTo(map_e67a3b5be5a184921babcd296134ad34);
+        
+    
+            var icon_8f1e5d7d82129cf7f1686fe4f052630a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7fa08c6374c62dc09efb61d9fb1e9649 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ceadef16be097d7d50f024513fc529a4 = $(`<div id="html_ceadef16be097d7d50f024513fc529a4" style="width: 100.0%; height: 100.0%;">Route M101<br>Avg Speed: 6.5 mph<br>Records: 28</div>`)[0];
+                popup_7fa08c6374c62dc09efb61d9fb1e9649.setContent(html_ceadef16be097d7d50f024513fc529a4);
+            
+        
+
+        marker_2c369f1de79b3102df0807123acc5008.bindPopup(popup_7fa08c6374c62dc09efb61d9fb1e9649)
+        ;
+
+        
+    
+    
+                marker_2c369f1de79b3102df0807123acc5008.setIcon(icon_8f1e5d7d82129cf7f1686fe4f052630a);
+            
+    
+            var marker_98355c6fbb3eae11db20bd9f0265339e = L.marker(
+                [40.7831, -73.9544],
+                {
+}
+            ).addTo(map_e67a3b5be5a184921babcd296134ad34);
+        
+    
+            var icon_71fac4c14489a9b99e960e47b8161da3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0836a5b8bf3d3163d39235c8118c1d32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_429ee2b08f984c4a1ca4d326ec2f8fe4 = $(`<div id="html_429ee2b08f984c4a1ca4d326ec2f8fe4" style="width: 100.0%; height: 100.0%;">Route M100<br>Avg Speed: 6.3 mph<br>Records: 28</div>`)[0];
+                popup_0836a5b8bf3d3163d39235c8118c1d32.setContent(html_429ee2b08f984c4a1ca4d326ec2f8fe4);
+            
+        
+
+        marker_98355c6fbb3eae11db20bd9f0265339e.bindPopup(popup_0836a5b8bf3d3163d39235c8118c1d32)
+        ;
+
+        
+    
+    
+                marker_98355c6fbb3eae11db20bd9f0265339e.setIcon(icon_71fac4c14489a9b99e960e47b8161da3);
+            
+    
+            var marker_4593b93123040250c0ba4d8f4a26324c = L.marker(
+                [40.7505, -73.9897],
+                {
+}
+            ).addTo(map_e67a3b5be5a184921babcd296134ad34);
+        
+    
+            var icon_cad4fd9a08afd0e3d321db3cd337e018 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c423f1f0522829cd8d3f79232ca6e49e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d10833795ee65477cf15df48e8d7329 = $(`<div id="html_3d10833795ee65477cf15df48e8d7329" style="width: 100.0%; height: 100.0%;">Route M34+<br>Avg Speed: 5.6 mph<br>Records: 28</div>`)[0];
+                popup_c423f1f0522829cd8d3f79232ca6e49e.setContent(html_3d10833795ee65477cf15df48e8d7329);
+            
+        
+
+        marker_4593b93123040250c0ba4d8f4a26324c.bindPopup(popup_c423f1f0522829cd8d3f79232ca6e49e)
+        ;
+
+        
+    
+    
+                marker_4593b93123040250c0ba4d8f4a26324c.setIcon(icon_cad4fd9a08afd0e3d321db3cd337e018);
+            
+    
+            var marker_4595988659290a639a3c87e9653995f5 = L.marker(
+                [40.7505, -73.9897],
+                {
+}
+            ).addTo(map_e67a3b5be5a184921babcd296134ad34);
+        
+    
+            var icon_425cc2f8623ecbd797d6f914b4bbb5de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a10f6bf75812f5a3a10a294c52268fca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d06ebe7cf9f5cd2bbf90a3230a376a7 = $(`<div id="html_5d06ebe7cf9f5cd2bbf90a3230a376a7" style="width: 100.0%; height: 100.0%;">Route M60+<br>Avg Speed: 10.9 mph<br>Records: 28</div>`)[0];
+                popup_a10f6bf75812f5a3a10a294c52268fca.setContent(html_5d06ebe7cf9f5cd2bbf90a3230a376a7);
+            
+        
+
+        marker_4595988659290a639a3c87e9653995f5.bindPopup(popup_a10f6bf75812f5a3a10a294c52268fca)
+        ;
+
+        
+    
+    
+                marker_4595988659290a639a3c87e9653995f5.setIcon(icon_425cc2f8623ecbd797d6f914b4bbb5de);
+            
+</script>
+</html>

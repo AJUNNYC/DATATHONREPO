@@ -1,0 +1,463 @@
+{
+  "generated_at": "2025-09-21T13:45:59.400712",
+  "dataset_summary": {
+    "total_records": 3778568,
+    "sample_size": 10000,
+    "date_range": {
+      "earliest": "2025-08-14",
+      "latest": "2025-08-21"
+    },
+    "violation_types": {
+      "MOBILE BUS STOP": 4763,
+      "MOBILE DOUBLE PARKED": 3457,
+      "MOBILE BUS LANE": 1780
+    },
+    "violation_statuses": {
+      "EXEMPT - EMERGENCY VEHICLE": 3555,
+      "DRIVER/VEHICLE INFO MISSING": 2486,
+      "EXEMPT - BUS/PARATRANSIT": 1682,
+      "TECHNICAL ISSUE/OTHER": 1112,
+      "EXEMPT - OTHER": 851,
+      "EXEMPT - COMMERCIAL UNDER 20": 314
+    },
+    "unique_routes": 40,
+    "unique_vehicles": 5972
+  },
+  "cuny_route_analysis": [
+    {
+      "bus_route_id": "M101",
+      "borough": "Manhattan",
+      "violation_count": 3614,
+      "most_common_type": "MOBILE BUS STOP",
+      "most_common_status": "EXEMPT - EMERGENCY VEHICLE",
+      "earliest_violation": "2025-08-09 10:43:24",
+      "latest_violation": "2025-08-20 23:35:29"
+    },
+    {
+      "bus_route_id": "M15+",
+      "borough": "Manhattan",
+      "violation_count": 1859,
+      "most_common_type": "MOBILE BUS LANE",
+      "most_common_status": "EXEMPT - EMERGENCY VEHICLE",
+      "earliest_violation": "2025-08-09 10:37:50",
+      "latest_violation": "2025-08-20 21:49:47"
+    },
+    {
+      "bus_route_id": "BX19",
+      "borough": "Bronx",
+      "violation_count": 1297,
+      "most_common_type": "MOBILE DOUBLE PARKED",
+      "most_common_status": "EXEMPT - EMERGENCY VEHICLE",
+      "earliest_violation": "2025-08-09 10:35:24",
+      "latest_violation": "2025-08-20 22:56:05"
+    },
+    {
+      "bus_route_id": "BX41+",
+      "borough": "Bronx",
+      "violation_count": 1288,
+      "most_common_type": "MOBILE BUS LANE",
+      "most_common_status": "EXEMPT - EMERGENCY VEHICLE",
+      "earliest_violation": "2025-08-09 10:45:11",
+      "latest_violation": "2025-08-20 20:49:26"
+    },
+    {
+      "bus_route_id": "M2",
+      "borough": "Manhattan",
+      "violation_count": 1079,
+      "most_common_type": "MOBILE BUS STOP",
+      "most_common_status": "EXEMPT - BUS/PARATRANSIT",
+      "earliest_violation": "2025-08-09 10:40:25",
+      "latest_violation": "2025-08-21 18:48:23"
+    },
+    {
+      "bus_route_id": "M100",
+      "borough": "Manhattan",
+      "violation_count": 983,
+      "most_common_type": "MOBILE DOUBLE PARKED",
+      "most_common_status": "DRIVER/VEHICLE INFO MISSING",
+      "earliest_violation": "2025-08-09 16:05:17",
+      "latest_violation": "2025-08-20 19:33:29"
+    },
+    {
+      "bus_route_id": "Q44+",
+      "borough": "Queens",
+      "violation_count": 934,
+      "most_common_type": "MOBILE BUS STOP",
+      "most_common_status": "EXEMPT - BUS/PARATRANSIT",
+      "earliest_violation": "2025-08-09 10:35:44",
+      "latest_violation": "2025-08-20 23:15:31"
+    },
+    {
+      "bus_route_id": "BX36",
+      "borough": "Bronx",
+      "violation_count": 871,
+      "most_common_type": "MOBILE DOUBLE PARKED",
+      "most_common_status": "DRIVER/VEHICLE INFO MISSING",
+      "earliest_violation": "2025-08-09 10:46:41",
+      "latest_violation": "2025-08-20 23:24:06"
+    },
+    {
+      "bus_route_id": "B44+",
+      "borough": "Brooklyn",
+      "violation_count": 806,
+      "most_common_type": "MOBILE BUS STOP",
+      "most_common_status": "EXEMPT - EMERGENCY VEHICLE",
+      "earliest_violation": "2025-08-09 10:56:15",
+      "latest_violation": "2025-08-20 19:23:07"
+    },
+    {
+      "bus_route_id": "M42",
+      "borough": "Manhattan",
+      "violation_count": 781,
+      "most_common_type": "MOBILE BUS LANE",
+      "most_common_status": "EXEMPT - BUS/PARATRANSIT",
+      "earliest_violation": "2025-08-09 10:34:51",
+      "latest_violation": "2025-08-21 19:02:04"
+    },
+    {
+      "bus_route_id": "BX6+",
+      "borough": "Bronx",
+      "violation_count": 673,
+      "most_common_type": "MOBILE DOUBLE PARKED",
+      "most_common_status": "DRIVER/VEHICLE INFO MISSING",
+      "earliest_violation": "2025-08-09 10:53:40",
+      "latest_violation": "2025-08-20 22:24:51"
+    },
+    {
+      "bus_route_id": "BX12+",
+      "borough": "Bronx",
+      "violation_count": 604,
+      "most_common_type": "MOBILE BUS LANE",
+      "most_common_status": "DRIVER/VEHICLE INFO MISSING",
+      "earliest_violation": "2025-08-09 11:04:12",
+      "latest_violation": "2025-08-20 20:51:35"
+    },
+    {
+      "bus_route_id": "B35",
+      "borough": "Brooklyn",
+      "violation_count": 526,
+      "most_common_type": "MOBILE BUS STOP",
+      "most_common_status": "DRIVER/VEHICLE INFO MISSING",
+      "earliest_violation": "2025-08-09 10:40:24",
+      "latest_violation": "2025-08-20 22:32:28"
+    },
+    {
+      "bus_route_id": "B82+",
+      "borough": "Brooklyn",
+      "violation_count": 502,
+      "most_common_type": "MOBILE BUS STOP",
+      "most_common_status": "DRIVER/VEHICLE INFO MISSING",
+      "earliest_violation": "2025-08-09 16:17:12",
+      "latest_violation": "2025-08-20 20:55:31"
+    },
+    {
+      "bus_route_id": "B46+",
+      "borough": "Brooklyn",
+      "violation_count": 493,
+      "most_common_type": "MOBILE BUS STOP",
+      "most_common_status": "DRIVER/VEHICLE INFO MISSING",
+      "earliest_violation": "2025-08-09 10:34:56",
+      "latest_violation": "2025-08-20 22:44:38"
+    },
+    {
+      "bus_route_id": "B41",
+      "borough": "Brooklyn",
+      "violation_count": 473,
+      "most_common_type": "MOBILE BUS STOP",
+      "most_common_status": "DRIVER/VEHICLE INFO MISSING",
+      "earliest_violation": "2025-08-09 10:59:06",
+      "latest_violation": "2025-08-20 19:51:40"
+    },
+    {
+      "bus_route_id": "Q53+",
+      "borough": "Queens",
+      "violation_count": 464,
+      "most_common_type": "MOBILE BUS STOP",
+      "most_common_status": "EXEMPT - BUS/PARATRANSIT",
+      "earliest_violation": "2025-08-09 10:44:22",
+      "latest_violation": "2025-08-20 22:33:13"
+    },
+    {
+      "bus_route_id": "BX28",
+      "borough": "Bronx",
+      "violation_count": 460,
+      "most_common_type": "MOBILE BUS STOP",
+      "most_common_status": "EXEMPT - BUS/PARATRANSIT",
+      "earliest_violation": "2025-08-09 11:02:22",
+      "latest_violation": "2025-08-20 23:48:59"
+    },
+    {
+      "bus_route_id": "M4",
+      "borough": "Manhattan",
+      "violation_count": 424,
+      "most_common_type": "MOBILE BUS STOP",
+      "most_common_status": "TECHNICAL ISSUE/OTHER",
+      "earliest_violation": "2025-08-09 10:49:58",
+      "latest_violation": "2025-08-21 19:40:47"
+    },
+    {
+      "bus_route_id": "BX35",
+      "borough": "Bronx",
+      "violation_count": 399,
+      "most_common_type": "MOBILE DOUBLE PARKED",
+      "most_common_status": "EXEMPT - EMERGENCY VEHICLE",
+      "earliest_violation": "2025-08-09 11:03:10",
+      "latest_violation": "2025-08-20 21:30:13"
+    },
+    {
+      "bus_route_id": "M60+",
+      "borough": "Manhattan",
+      "violation_count": 276,
+      "most_common_type": "MOBILE DOUBLE PARKED",
+      "most_common_status": "EXEMPT - EMERGENCY VEHICLE",
+      "earliest_violation": "2025-08-09 10:48:29",
+      "latest_violation": "2025-08-20 19:37:14"
+    },
+    {
+      "bus_route_id": "B25",
+      "borough": "Brooklyn",
+      "violation_count": 252,
+      "most_common_type": "MOBILE BUS LANE",
+      "most_common_status": "VIOLATION ISSUED",
+      "earliest_violation": "2025-08-09 11:41:00",
+      "latest_violation": "2025-08-20 18:02:39"
+    },
+    {
+      "bus_route_id": "M34+",
+      "borough": "Manhattan",
+      "violation_count": 208,
+      "most_common_type": "MOBILE BUS STOP",
+      "most_common_status": "EXEMPT - EMERGENCY VEHICLE",
+      "earliest_violation": "2025-08-09 11:10:55",
+      "latest_violation": "2025-08-20 20:49:42"
+    },
+    {
+      "bus_route_id": "Q43",
+      "borough": "Queens",
+      "violation_count": 199,
+      "most_common_type": "MOBILE BUS LANE",
+      "most_common_status": "EXEMPT - OTHER",
+      "earliest_violation": "2025-08-09 15:15:44",
+      "latest_violation": "2025-08-20 20:31:42"
+    },
+    {
+      "bus_route_id": "B62",
+      "borough": "Brooklyn",
+      "violation_count": 160,
+      "most_common_type": "MOBILE BUS STOP",
+      "most_common_status": "EXEMPT - EMERGENCY VEHICLE",
+      "earliest_violation": "2025-08-09 10:35:40",
+      "latest_violation": "2025-08-20 17:43:42"
+    },
+    {
+      "bus_route_id": "BX38",
+      "borough": "Bronx",
+      "violation_count": 103,
+      "most_common_type": "MOBILE BUS STOP",
+      "most_common_status": "EXEMPT - OTHER",
+      "earliest_violation": "2025-08-09 11:42:00",
+      "latest_violation": "2025-08-20 22:14:17"
+    },
+    {
+      "bus_route_id": "Q5",
+      "borough": "Queens",
+      "violation_count": 85,
+      "most_common_type": "MOBILE BUS LANE",
+      "most_common_status": "DRIVER/VEHICLE INFO MISSING",
+      "earliest_violation": "2025-08-09 14:03:05",
+      "latest_violation": "2025-08-20 12:04:55"
+    },
+    {
+      "bus_route_id": "B26",
+      "borough": "Brooklyn",
+      "violation_count": 73,
+      "most_common_type": "MOBILE BUS STOP",
+      "most_common_status": "DRIVER/VEHICLE INFO MISSING",
+      "earliest_violation": "2025-08-09 17:03:06",
+      "latest_violation": "2025-08-20 15:27:13"
+    },
+    {
+      "bus_route_id": "Q69",
+      "borough": "Queens",
+      "violation_count": 70,
+      "most_common_type": "MOBILE BUS STOP",
+      "most_common_status": "EXEMPT - EMERGENCY VEHICLE",
+      "earliest_violation": "2025-08-09 12:08:43",
+      "latest_violation": "2025-08-20 23:19:02"
+    },
+    {
+      "bus_route_id": "Q58",
+      "borough": "Queens",
+      "violation_count": 44,
+      "most_common_type": "MOBILE BUS STOP",
+      "most_common_status": "EXEMPT - EMERGENCY VEHICLE",
+      "earliest_violation": "2025-08-09 17:16:08",
+      "latest_violation": "2025-08-20 18:48:18"
+    }
+  ],
+  "exempt_vehicle_analysis": {
+    "total_exempt_violations": 25000,
+    "repeat_offender_count": 3984,
+    "most_frequent_repeat_offender": "98",
+    "top_violation_locations": [
+      {
+        "location": "WEBSTER AV/BEDFORD PARK BLVD",
+        "exempt_type": "EXEMPT - EMERGENCY VEHICLE",
+        "count": 585
+      },
+      {
+        "location": "AMSTERDAM AV/W 175 ST",
+        "exempt_type": "EXEMPT - EMERGENCY VEHICLE",
+        "count": 477
+      },
+      {
+        "location": "AMSTERDAM AV/W 171 ST",
+        "exempt_type": "EXEMPT - EMERGENCY VEHICLE",
+        "count": 370
+      },
+      {
+        "location": "E 149 ST/BERGEN AV",
+        "exempt_type": "EXEMPT - EMERGENCY VEHICLE",
+        "count": 274
+      },
+      {
+        "location": "PAUL AV/BEDFORD PARK BLVD",
+        "exempt_type": "EXEMPT - BUS/PARATRANSIT",
+        "count": 274
+      },
+      {
+        "location": "BROADWAY/QUEENS BLVD",
+        "exempt_type": "EXEMPT - BUS/PARATRANSIT",
+        "count": 268
+      },
+      {
+        "location": "ROGERS AV/AVENUE D",
+        "exempt_type": "EXEMPT - EMERGENCY VEHICLE",
+        "count": 173
+      },
+      {
+        "location": "UNION ST/35 AV",
+        "exempt_type": "EXEMPT - OTHER",
+        "count": 157
+      },
+      {
+        "location": "W 42 ST/9 AV",
+        "exempt_type": "EXEMPT - BUS/PARATRANSIT",
+        "count": 153
+      },
+      {
+        "location": "MADISON ST/CATHERINE ST",
+        "exempt_type": "EXEMPT - EMERGENCY VEHICLE",
+        "count": 148
+      }
+    ],
+    "route_patterns": [
+      {
+        "route": "M101",
+        "exempt_type": "EXEMPT - EMERGENCY VEHICLE",
+        "count": 2941
+      },
+      {
+        "route": "BX41+",
+        "exempt_type": "EXEMPT - EMERGENCY VEHICLE",
+        "count": 1218
+      },
+      {
+        "route": "M15+",
+        "exempt_type": "EXEMPT - EMERGENCY VEHICLE",
+        "count": 1187
+      },
+      {
+        "route": "BX19",
+        "exempt_type": "EXEMPT - EMERGENCY VEHICLE",
+        "count": 986
+      },
+      {
+        "route": "M15+",
+        "exempt_type": "EXEMPT - BUS/PARATRANSIT",
+        "count": 679
+      },
+      {
+        "route": "Q44+",
+        "exempt_type": "EXEMPT - BUS/PARATRANSIT",
+        "count": 617
+      },
+      {
+        "route": "M2",
+        "exempt_type": "EXEMPT - BUS/PARATRANSIT",
+        "count": 597
+      },
+      {
+        "route": "B44+",
+        "exempt_type": "EXEMPT - EMERGENCY VEHICLE",
+        "count": 581
+      },
+      {
+        "route": "BX28",
+        "exempt_type": "EXEMPT - BUS/PARATRANSIT",
+        "count": 550
+      },
+      {
+        "route": "M101",
+        "exempt_type": "EXEMPT - BUS/PARATRANSIT",
+        "count": 539
+      },
+      {
+        "route": "M42",
+        "exempt_type": "EXEMPT - BUS/PARATRANSIT",
+        "count": 526
+      },
+      {
+        "route": "M101",
+        "exempt_type": "EXEMPT - COMMERCIAL UNDER 20",
+        "count": 480
+      },
+      {
+        "route": "M15+",
+        "exempt_type": "EXEMPT - OTHER",
+        "count": 471
+      },
+      {
+        "route": "M101",
+        "exempt_type": "EXEMPT - OTHER",
+        "count": 462
+      },
+      {
+        "route": "Q53+",
+        "exempt_type": "EXEMPT - BUS/PARATRANSIT",
+        "count": 441
+      }
+    ],
+    "exempt_status_distribution": {
+      "EXEMPT - EMERGENCY VEHICLE": 12467,
+      "EXEMPT - BUS/PARATRANSIT": 6066,
+      "EXEMPT - OTHER": 3620,
+      "EXEMPT - COMMERCIAL UNDER 20": 2847
+    }
+  },
+  "congestion_pricing_analysis": {
+    "before_period": {
+      "total_violations": 15000,
+      "daily_average": 500.0,
+      "most_affected_routes": {
+        "M15+": 13097,
+        "M34+": 1196,
+        "M23+": 707
+      }
+    },
+    "after_period": {
+      "total_violations": 15000,
+      "daily_average": 600.0,
+      "most_affected_routes": {
+        "M15+": 13151,
+        "M34+": 1018,
+        "M23+": 831
+      }
+    },
+    "change_metrics": {
+      "violation_change_percent": 0.0,
+      "daily_average_change": 100.0
+    }
+  },
+  "map_created": true
+}
